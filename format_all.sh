@@ -1,6 +1,6 @@
 #!/bin/bash  
 # TODO:在DIRS里增加你要格式化代码的文件夹名称例如
-# DIRS=("./Software/Project/Protocol/ ./Software/Project/Source/")
+# DIRS=("./Software/Project/Protocol/" "./Software/Project/Source/")
 
 # 尝试执行Windows特有的命令，用于判断当前的OS类型 
 if command -v cmd >/dev/null 2>&1; then  
