@@ -13,13 +13,17 @@
 1. 把tools文件夹放在你工程的根目录
 2. 把format_all.sh从tools文件夹内复制出来，将**DIRS**填写成你要格式化的目录
 3. 将.clang-format文件复制到你想要格式化的目录下。
-4. 在根目录打开git-bash终端键入`./format_all.sh` 
+4. 在根目录打开git-bash终端键入 `./format_all.sh`
+
+或者你可以直接在你工程的根目录下添加子模块
+
+`git submodule add git@github.com:FlyyingPiggy2020/clang-format.git tools/clang-format `
 
 # 简单介绍
 
 `format_all.sh`是格式化shell脚本，它的内容如下：
 
-在windows环境下可以通过git-bash或者其他bash终端来执行。git自带了git-bash一般来说用这个就行了。在终端键入`./format_all.sh` 
+在windows环境下可以通过git-bash或者其他bash终端来执行。git自带了git-bash一般来说用这个就行了。在终端键入 `./format_all.sh`
 
 ```
 #!/bin/bash  
@@ -82,4 +86,3 @@ windows下会去利用“**tools/clang-format**”这个exe文件格式化代码
 ...
 // clang-format on
 ```
-
