@@ -22,7 +22,7 @@ else
   if [ -f /proc/version ]; then
     for dir in "${DIRS[@]}"; do
       $VERBOSE && echo "Processing $dir:"
-      find "$dir" -type f \( -name "*.c" -o -name "*.h" \) -print
+      $VERBOSE && find "$dir" -type f \( -name "*.c" -o -name "*.h" \) -print
       find "$dir" -type f \( -name "*.c" -o -name "*.h" \) -exec clang-format -i {} +
     done
   fi
